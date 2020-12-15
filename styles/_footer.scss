@@ -1,0 +1,106 @@
+footer {
+  height: 400px;
+  width: 100%;
+  background-color: $color-dark-green;
+}
+
+.join {
+  height: 50%;
+  position: relative;
+  background-color: $color-primary-coral;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-head {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: $color-dark-green;
+}
+
+.btn-footer {
+  background-color: inherit;
+  color: $color-dark-green;
+  border-color: $color-dark-green;
+
+  &:hover {
+    color: white;
+    background-color: $color-dark-green;
+  }
+}
+
+.join-back {
+  position: absolute;
+  bottom: 0;
+  background-image: url(./../images/bg-pattern-home-6-about-5.svg);
+  width: 200px;
+  height: 144px;
+  left: 0;
+  background-repeat: no-repeat;
+}
+
+.foot {
+  padding: 1em 0 0 0;
+  display: flex;
+  margin: 0 165px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_cont {
+  display: flex;
+}
+
+.footer__info {
+  margin-top: 1rem;
+}
+
+.footer__nav {
+  display: grid;
+  margin-right: 5rem;
+  margin-top: 1rem;
+
+  & ul {
+    display: flex;
+
+    & li:first-child {
+      margin-right: 40px;
+    }
+  }
+}
+
+.footer__info-text {
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.6;
+}
+
+.social__logo {
+  margin-right: 5px;
+  transition: all 0.5s ease;
+
+  &:hover img {
+    filter: invert(0.31) sepia(0.5) saturate(13.6) hue-rotate(305.8deg)
+      brightness(1.07);
+  }
+}
+
+.footer__rights {
+  grid-gap: 2.5rem;
+  display: grid;
+  margin-top: 1rem;
+}
+
+.footer__right {
+  font-size: 15px;
+  line-height: 25px;
+  text-align: right;
+  opacity: 0.6;
+}
+
+.social {
+  place-self: flex-end;
+}
