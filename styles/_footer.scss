@@ -25,6 +25,9 @@ footer {
   background-color: inherit;
   color: $color-dark-green;
   border-color: $color-dark-green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     color: white;

@@ -1,49 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | myteam website challenge - Contact</title>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Livvic:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
 
-  home
-  about
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  contact us
+    <title>Frontend Mentor | myteam website challenge - Contact</title>
+  </head>
+  <body>
+    <section class="contact">
+      <nav>
+        <div class="container">
+          <img src="images/logo.svg" alt="logo" class="logo" />
+          <ul>
+            <li><a href="index.html">home </a></li>
+            <li><a href="about.html">about</a></li>
+          </ul>
+        </div>
+        <a href="contact.html" class="btn btn-contact">contact us</a>
+      </nav>
+        <div class="contact__container">
+          <div class="contact__ask">
+            <h1>Contact</h1>
+            <h3>Ask us about</h3>
+            <div class="list_item">
+              <div><img src="images/icon-person.svg" alt="icon of person"></div>
+                <p class="text">The quality of our talent network</p>
+          </div>
+            <div class="list_item">
+              <div><img src="images/icon-cog.svg" alt="icon of cog"></div>
+                <p class="text">Usage &
+    implementation of our software</p>
+          </div>
+            <div class="list_item">
+              <div><img src="images/icon-chart.svg" alt="icon of chart"></div>
+                <p class="text">How we help drive innovation</p>
+          </div>
+        </div>
+        <div class="contact__form">
+           <form>
+             <div class="field">
+               <input type="text" name="name"  autocomplete="off" placeholder="Name" required>
+               <span class="form__error">This field is required</span>
+             </div>
+          
+             <div class="field"><input type="email" name="email" autocomplete="off"  placeholder="Email" required>
+              <span class="form__error">This field is required</span></div>
+             <div class="field"><input type="text" name="company"  autocomplete="off" placeholder="Company Name" required>
+              <span class="form__error">This field is required</span></div>
+             <div class="field"><input type="text" name="title"  autocomplete="off" placeholder="Title" required>
+              <span class="form__error">This field is required</span></div>
 
+          
+          
+          
+          <textarea name="message" id="mes" rows="5" placeholder="Massage"></textarea>
+          <button class="btn btn-submit">submit</button>
+        </form>
+        </div>
+       
+      </section>
+    </header>
 
+    <footer class='footer_contact'>
+      <div class="foot">
+        <div class="footer_cont">
+          <div class="footer__nav">
+            <img src="images/logo.svg" alt="logo" class="logo" />
+            <ul>
+              <li><a href="index.html">home </a></li>
+              <li><a href="about.html">about</a></li>
+            </ul>
+          </div>
+          <div class="footer__info">
+            <p class="footer__info-text">987 Hillcrest Lane</p>
+            <p class="footer__info-text">Irvine, CA</p>
+            <p class="footer__info-text">California 92714</p>
+            <p class="footer__info-text">Call Us : 949-833-7432</p>
+          </div>
+        </div>
 
-  Contact
+        <div class="footer__rights">
+          <div class="social">
+            <a href="#" class="social__logo"
+              ><img src="images/icon-facebook.svg" alt="facebook"
+            /></a>
+            <a href="#" class="social__logo"
+              ><img src="images/icon-pinterest.svg" alt="pinterest"
+            /></a>
+            <a href="#" class="social__logo"
+              ><img src="images/icon-twitter.svg" alt="twitter"
+            /></a>
+          </div>
+          <div class="rights">
+            <p class="footer__right">Copyright 2020. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-  Ask us about
-
-  The quality of our talent network
-  Usage & implementation of our software
-  How we help drive innovation
-
-  Name
-  Email Address
-  Company Name
-  Title
-  Message
-
-  submit
-
-
-
-  home
-  about
-
-  987  Hillcrest Lane
-  Irvine, CA
-  California 92714
-  Call Us : 949-833-7432
-
-  Copyright 2020. All Rights Reserved
-  
-</body>
+    <script src="contact.js"></script>
+  </body>
 </html>
