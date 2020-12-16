@@ -72,3 +72,35 @@ a {
 li {
   list-style: none;
 }
+
+.avatar {
+  border-radius: 50%;
+  border: 2px solid $color-rapture-blue;
+  overflow: hidden;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.name {
+  color: $color-rapture-blue;
+  text-align: center;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.position {
+  text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 48px;
+}
