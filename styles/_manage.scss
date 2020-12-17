@@ -72,3 +72,44 @@ h3 {
   background-repeat: no-repeat;
   background-image: url("./../images/bg-pattern-home-3.svg");
 }
+
+@media (max-width: 1200px) {
+  .manage__content {
+    place-items: center;
+    grid-template: 1fr 1fr / 1fr;
+    grid-gap: 2rem;
+  }
+
+  .manage__content--list {
+    grid-row: span 1;
+    grid-column: 1 /1;
+  }
+
+  .manage__tittle {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .manage__content--construct {
+    justify-content: space-evenly;
+    height: 150px;
+    width: 540px;
+  }
+
+  .list_item_data {
+    & .text {
+      font-size: 15px;
+      line-height: 25px;
+    }
+
+    & h3 {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  .btm-rg-back {
+    top: 0;
+    left: 92%;
+  }
+}

@@ -53,7 +53,7 @@ function makeDirectorsMarkup(directors) {
       <div class="director">
       <div class="card__content">
         <input type="checkbox" name="" id="dir${i}" class="check" />
-        <label for="dir${i}"></label>
+        <label class="director__label" for="dir${i}"></label>
         <div class="director__front">
           <div class="avatar director__avatar">
             <img src=${el.photo} alt="${el.name} avatar" />

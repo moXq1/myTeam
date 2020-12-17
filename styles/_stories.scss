@@ -9,6 +9,7 @@
     grid-template: 1fr 1fr / 1fr;
     grid-gap: 135px;
     place-items: center;
+    place-content: center;
     height: 80%;
     transform: translateY(10%);
   }
@@ -95,4 +96,32 @@
   background-repeat: no-repeat;
   right: -2%;
   background-image: url("./../images/bg-pattern-home-5.svg");
+}
+
+@media (max-width: 1110px) {
+  .stories {
+    height: 1200px;
+  }
+
+  .stories__content {
+    gap: 3rem;
+  }
+  .stories-head {
+    font-size: 32px;
+    line-height: 32px;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+    width: 490px;
+  }
+  .stories__container {
+    flex-direction: column;
+  }
+
+  .story:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
+  .story--text {
+    width: 570px;
+  }
 }
