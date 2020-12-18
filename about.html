@@ -20,14 +20,20 @@
   <body>
     <section class="about">
       <nav>
+        <input type="checkbox" name="nav" id="nav__check" />
+        <label for="nav__check" class="menu_icon">
+          <span class="navigation__icon"></span>
+        </label>
         <div class="container">
-          <img src="images/logo.svg" alt="logo" class="logo" />
+          <a href="/"><img src="images/logo.svg" alt="logo" class="logo" /></a>
           <ul>
             <li><a href="index.html">home </a></li>
             <li><a href="about.html">about</a></li>
+            <li class="contact_li">
+              <a href="contact.html" class="btn btn-contact">contact us</a>
+            </li>
           </ul>
         </div>
-        <a href="contact.html" class="btn btn-contact">contact us</a>
       </nav>
       <div class="about__container">
         <h1 class="about__head">About</h1>
@@ -41,8 +47,6 @@
           </p>
         </div>
       </div>
-
-      <div class="about-back"></div>
     </section>
 
     <section class="directors">

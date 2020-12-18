@@ -113,3 +113,46 @@ h3 {
     left: 92%;
   }
 }
+
+@media (max-width: 640px) {
+  .manage {
+    height: 1073px;
+  }
+
+  .manage__tittle {
+    width: 240px;
+    height: auto;
+    align-self: start;
+  }
+
+  .manage__content {
+    padding-left: 1rem;
+    grid-template: 240px 1fr / 1fr;
+    margin: 0;
+  }
+
+  .manage__content--construct {
+    width: auto;
+    place-self: self-start;
+    height: 240px;
+    margin-left: 2rem;
+  }
+
+  .btm-rg-back {
+    left: 84%;
+  }
+
+  .list_item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    margin: 0 1rem;
+    padding-right: 1rem;
+    margin-bottom: 3rem;
+
+    &_data {
+      align-items: center;
+    }
+  }
+}

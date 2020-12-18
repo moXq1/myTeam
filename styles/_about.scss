@@ -2,17 +2,29 @@
   background-color: $color-primary-green;
   height: 500px;
   position: relative;
+
+  & nav {
+    height: 28%;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    background-image: url("./../images/bg-pattern-about-1-mobile-nav-1.svg");
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 200px;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .about__container {
   display: grid;
   place-items: center;
-  height: 100%;
+  height: 60%;
   margin: 0 165px;
-  grid-template:
-    1fr /
-    minmax(auto, 635px)
-    minmax(auto, 445px);
+  grid-template: 1fr / 300px 1fr;
   grid-gap: 30px;
 }
 
@@ -34,17 +46,7 @@
 }
 
 .about__text {
-  width: 700px;
-}
-
-.about-back {
-  position: absolute;
-  background-image: url("./../images/bg-pattern-about-1-mobile-nav-1.svg");
-  background-repeat: no-repeat;
-  width: 200px;
-  height: 200px;
-  bottom: 0;
-  right: -7%;
+  width: auto;
 }
 
 .directors {
@@ -220,5 +222,135 @@
 
   & img {
     width: 100%;
+  }
+}
+
+@media (max-width: 1278px) {
+  .directors__container {
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1258px) {
+  .about__container {
+    place-content: center;
+    grid-template: 85px auto / 1fr;
+    gap: 2rem;
+  }
+
+  .about__content {
+    height: auto;
+    & .line {
+      display: none;
+      align-items: center;
+    }
+  }
+
+  .about__text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 960px) {
+  .directors__container {
+    grid-template: 1fr / 1fr;
+  }
+
+  .director {
+    grid-row: span 1;
+  }
+
+  .about__head {
+    font-size: 64px;
+    line-height: 56px;
+  }
+}
+
+@media (max-width: 814px) {
+  .about__text {
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .about:before {
+    bottom: -23%;
+  }
+
+  .about__container {
+  }
+}
+
+@media (max-width: 799px) {
+  .about {
+    & nav {
+      & label {
+        top: 28%;
+      }
+    }
+  }
+
+  .directors:before {
+    top: -5%;
+  }
+  .clients:after {
+    top: -22%;
+  }
+}
+
+@media (max-width: 680px) {
+  .about__head {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .about__container {
+    margin: 0 2rem;
+    height: 60%;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .directors__container {
+    margin: 0 2rem;
+  }
+
+  .directors {
+    & h2 {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .director__front {
+    padding: 3.5rem 1rem;
+  }
+}
+
+@media (max-width: 570px) {
+  .clients__container h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .directors {
+    & h2 {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+
+  .client {
+    grid-template: repeat(5, 54px) / 162px;
+    place-content: center;
+  }
+
+  .clients:after {
+    top: -15%;
+  }
+
+  .clients__container {
+    padding: 7rem 0;
+
+    margin: 0 1rem;
   }
 }

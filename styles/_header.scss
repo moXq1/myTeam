@@ -103,7 +103,7 @@ nav {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 400px;
+  width: 360px;
   height: 100px;
   background-repeat: no-repeat;
   background-image: url("./../images/bg-pattern-home-2.svg");
@@ -114,9 +114,12 @@ nav {
 
   &:checked ~ .container ul {
     left: 60vw;
+    visibility: visible;
+    transition: left 0.5s ease;
   }
   &:checked ~ .container ul:before {
     opacity: 1;
+    visibility: visible;
   }
 
   &:checked ~ .menu_icon .navigation__icon {
@@ -212,7 +215,7 @@ nav {
       align-items: flex-start;
       height: 100vh;
       padding: 7rem 0;
-
+      visibility: hidden;
       position: fixed;
       top: 0;
       z-index: 8;
@@ -221,7 +224,7 @@ nav {
       background-color: #79c8c7;
 
       left: 100vw;
-      transition: left 0.5s ease;
+      transition: left 0.5s ease, visibility 0.5s ease 0.5s;
 
       &:before {
         content: "";
@@ -236,6 +239,7 @@ nav {
         width: 100vw;
         z-index: -1;
         background-color: rgba(0, 0, 0, 0.5);
+        visibility: hidden;
       }
 
       &:after {
@@ -260,6 +264,17 @@ nav {
     position: initial;
     padding: 0rem 1rem 1rem 2rem;
     margin: 0;
+
+    &:before {
+      content: "";
+      position: absolute;
+      background-image: url("./../images/bg-pattern-about-1-mobile-nav-1.svg");
+      height: 200px;
+      width: 100px;
+      left: 0;
+      bottom: 1%;
+      transform: rotate(180deg);
+    }
   }
 
   .menu_icon {
@@ -270,5 +285,44 @@ nav {
     top: 40%;
     right: -90%;
     z-index: 10;
+  }
+}
+
+@media (max-width: 680px) {
+  .content__text {
+    width: 325px;
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .content__cont {
+    width: auto;
+  }
+
+  .header__head {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .content {
+    gap: 1rem;
+    grid-template: 90px 110px / 1fr;
+    padding-bottom: 5rem;
+    padding-right: 1rem;
+  }
+  nav {
+    margin-left: 0;
+    width: 90%;
+  }
+}
+
+@media (max-width: 540px) {
+  #nav__check:checked ~ .container ul {
+    left: 50vw;
+  }
+}
+@media (max-width: 540px) {
+  #nav__check:checked ~ .container ul {
+    left: 35vw;
   }
 }
